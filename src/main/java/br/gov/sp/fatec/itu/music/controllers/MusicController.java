@@ -14,7 +14,7 @@ import br.gov.sp.fatec.itu.music.services.MusicService;
 
 @RestController
 @RequestMapping("musics")
-public class StudentController {
+public class MusicController {
 
     @Autowired
     private MusicService service;
