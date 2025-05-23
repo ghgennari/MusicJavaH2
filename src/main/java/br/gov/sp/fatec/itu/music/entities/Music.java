@@ -18,50 +18,57 @@ public class Music implements Serializable {
     private String title;
     private String singer;
     private String album;
-    private Integer year;
+    private Integer date;
     private Integer duration;
 
-    //Id
-    public long getId(){
-        return id;
-    }
-    public void setId(Long id){
+    
+
+    public void setId(Long id) {
         this.id = id;
     }
-    //Title
-    public String getTitle(){
-        return title;
-    }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    //singer
-    public String getsinger(){
-        return singer;
-    }
-    public void setsinger(String singer){
+
+    public void setSinger(String singer) {
         this.singer = singer;
     }
-    //Album
-    public String getAlbum(){
-        return album;
-    }
-    public void setAlbum(String album){
+
+    public void setAlbum(String album) {
         this.album = album;
     }
-    //Year
-    public Integer getYear(){
-        return year;
+
+    public void setDate(Integer date) {
+        this.date = date;
     }
-    public void setyear(Integer year){
-        this.year = year;
-    }
-    //duration
-    public Integer getDuration(){
-        return duration;
-    }
-    public void setDuration(Integer duration){
+
+    public void setDuration(Integer duration) {
         this.duration = duration;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSinger() {
+        return singer;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
+
+    public Integer getDate() {
+        return date;
+    }
+
+    public Integer getDuration() {
+        return duration;
     }
 
     @Override
@@ -89,3 +96,5 @@ public class Music implements Serializable {
         return true;
     }
 }
+
+
